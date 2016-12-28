@@ -2,6 +2,11 @@
 - hosts: localhost
   remote_user: root
   tasks:
+    - name: Tap Caskroom Versions
+      homebrew_tap:
+        name: caskroom/versions
+        state: present
+
     - name: Install Google Chrome
       homebrew_cask:
         name: google-chrome
@@ -37,7 +42,7 @@
         name: vlc
         state: present
 
-    - name: Install PyCharm
+    - name: Install PyCharm Community
       homebrew_cask:
-        name: pycharm
+        name: pycharm-ce
         state: present
