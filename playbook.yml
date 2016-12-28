@@ -7,6 +7,11 @@
         name: caskroom/versions
         state: present
 
+    - name: Install iTerm2
+      homebrew_cask:
+        name: iterm2
+        state: present
+
     - name: Install Google Chrome
       homebrew_cask:
         name: google-chrome
