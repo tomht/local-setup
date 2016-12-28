@@ -21,3 +21,8 @@
       homebrew_cask:
         name: sublime-text
         state: present
+
+    - name: Install Sonos
+      homebrew_cask:
+        name: sonos
+        state: present
