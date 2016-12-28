@@ -36,3 +36,8 @@
       homebrew_cask:
         name: vlc
         state: present
+
+    - name: Install PyCharm
+      homebrew_cask:
+        name: pycharm
+        state: present
