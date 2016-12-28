@@ -31,3 +31,8 @@
       homebrew_cask:
         name: flux
         state: present
+
+    - name: Install VLC
+      homebrew_cask:
+        name: vlc
+        state: present
