@@ -26,3 +26,8 @@
       homebrew_cask:
         name: sonos
         state: present
+
+    - name: Install f.lux
+      homebrew_cask:
+        name: flux
+        state: present
