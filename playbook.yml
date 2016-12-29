@@ -8,6 +8,14 @@
         name: tom
         shell: /bin/zsh
 
+    - name: Show hidden files
+      osx_defaults:
+        domain: com.apple.finder
+        key: AppleShowAllFiles
+        type: string
+        value: YES
+        state: present
+
     - name: Install Node.js and npm
       homebrew:
         name: node
