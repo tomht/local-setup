@@ -19,6 +19,16 @@
     - name: Install oh-my-zsh
       shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+    - name: Install Python 2
+      homebrew:
+        name: python
+        state: present
+
+    - name: Install Python 3
+      homebrew:
+        name: python3
+        state: present
+
     - name: Install Node.js and npm
       homebrew:
         name: node
