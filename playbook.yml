@@ -88,3 +88,8 @@
       homebrew_cask:
         name: keepassx
         state: present
+
+    - name: Install uTorrent
+      homebrew_cask:
+        name: utorrent
+        state: present
