@@ -7,6 +7,12 @@
       user:
         name: tom
         shell: /bin/zsh
+
+    - name: Install Node.js and npm
+      homebrew:
+        name: node
+        state: present
+
     - name: Tap Caskroom Versions
       homebrew_tap:
         name: caskroom/versions
