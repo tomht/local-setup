@@ -16,6 +16,9 @@
         value: YES
         state: present
 
+    - name: Install oh-my-zsh
+      shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
     - name: Install Node.js and npm
       homebrew:
         name: node
