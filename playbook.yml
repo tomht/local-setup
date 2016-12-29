@@ -67,3 +67,8 @@
       homebrew_cask:
         name: disk-inventory-x
         state: present
+
+    - name: Install Keka
+      homebrew_cask:
+        name: keka
+        state: present
