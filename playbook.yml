@@ -2,6 +2,11 @@
 - hosts: localhost
   remote_user: root
   tasks:
+    - name: Change default shell to zsh
+      become: true
+      user:
+        name: tom
+        shell: /bin/zsh
     - name: Tap Caskroom Versions
       homebrew_tap:
         name: caskroom/versions
