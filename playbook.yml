@@ -83,3 +83,8 @@
       homebrew_cask:
         name: keka
         state: present
+
+    - name: Install KeepPassX
+      homebrew_cask:
+        name: keepassx
+        state: present
