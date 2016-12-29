@@ -62,3 +62,8 @@
       homebrew_cask:
         name: pycharm-ce
         state: present
+
+    - name: Install Disk Inventory X
+      homebrew_cask:
+        name: disk-inventory-x
+        state: present
