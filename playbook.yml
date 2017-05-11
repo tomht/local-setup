@@ -119,3 +119,18 @@
       homebrew_cask:
         name: utorrent
         state: present
+
+    - name: Install XQuartz
+      homebrew_cask:
+        name: xquartz
+        state: present
+
+    - name: Tap Homebrew Science
+      homebrew_tap:
+        name: homebrew/science
+        state: present
+
+    - name: Install Octave
+      homebrew:
+        name: octave
+        state: present
