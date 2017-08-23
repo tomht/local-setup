@@ -47,6 +47,11 @@
         name: ruby
         state: present
 
+    - name: Install Jekyll
+      gem:
+        name: jekyll
+        state: present
+
     - name: Tap Caskroom Versions
       homebrew_tap:
         name: caskroom/versions
