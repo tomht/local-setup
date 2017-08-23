@@ -47,6 +47,11 @@
         name: ruby
         state: present
 
+    - name: Install Bundler
+      gem:
+        name: bundler
+        state: present
+
     - name: Install Jekyll
       gem:
         name: jekyll
