@@ -42,6 +42,11 @@
         name: node
         state: present
 
+    - name: Install Ruby
+      homebrew:
+        name: ruby
+        state: present
+
     - name: Tap Caskroom Versions
       homebrew_tap:
         name: caskroom/versions
@@ -65,11 +70,6 @@
         name: google-chrome
         state: present
 
-    - name: Install Google Drive
-      homebrew_cask:
-        name: google-drive
-        state: present
-
     - name: Install Spotify
       homebrew_cask:
         name: spotify
@@ -78,11 +78,6 @@
     - name: Install Sublime Text
       homebrew_cask:
         name: sublime-text
-        state: present
-
-    - name: Install Sonos
-      homebrew_cask:
-        name: sonos
         state: present
 
     - name: Install f.lux
@@ -113,11 +108,6 @@
     - name: Install KeepPassX
       homebrew_cask:
         name: keepassx
-        state: present
-
-    - name: Install uTorrent
-      homebrew_cask:
-        name: utorrent
         state: present
 
     - name: Install XQuartz
