@@ -125,6 +125,11 @@
         name: xquartz
         state: present
 
+    - name: Install Haskell Platform
+      homebrew_cask:
+        name: haskell-platform
+        state: present
+
     - name: Tap Homebrew Science
       homebrew_tap:
         name: homebrew/science
