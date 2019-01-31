@@ -57,10 +57,10 @@
         name: jekyll
         state: present
 
-    - name: Tap Caskroom Versions
-      homebrew_tap:
-        name: caskroom/versions
-        state: present
+    # - name: Tap Caskroom Versions
+    #   homebrew_tap:
+    #     name: caskroom/versions
+    #     state: present
 
     - name: Install iTerm2
       homebrew_cask:
@@ -103,6 +103,11 @@
     - name: Install PyCharm Community
       homebrew_cask:
         name: pycharm-ce
+        state: present
+
+    - name: Install Visual Studio Code
+      homebrew_cask:
+        name: visual-studio-code
         state: present
 
     - name: Install Disk Inventory X
