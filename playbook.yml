@@ -23,10 +23,6 @@
         value: false
         state: present 
 
-
-    - name: Install oh-my-zsh
-      shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
     - name: Install Python 2
       homebrew:
         name: python
@@ -56,11 +52,6 @@
       gem:
         name: jekyll
         state: present
-
-    # - name: Tap Caskroom Versions
-    #   homebrew_tap:
-    #     name: caskroom/versions
-    #     state: present
 
     - name: Install iTerm2
       homebrew_cask:
@@ -100,11 +91,6 @@
         name: vlc
         state: present
 
-    - name: Install PyCharm Community
-      homebrew_cask:
-        name: pycharm-ce
-        state: present
-
     - name: Install Visual Studio Code
       homebrew_cask:
         name: visual-studio-code
@@ -125,22 +111,24 @@
         name: keepassx
         state: present
 
+# Uninstall
+
+    - name: Install PyCharm Community
+      homebrew_cask:
+        name: pycharm-ce
+        state: absent
+
     - name: Install XQuartz
       homebrew_cask:
         name: xquartz
-        state: present
+        state: absent
 
     - name: Install Haskell Platform
       homebrew_cask:
         name: haskell-platform
-        state: present
-
-    - name: Tap Homebrew Science
-      homebrew_tap:
-        name: homebrew/science
-        state: present
+        state: absent
 
     - name: Install Octave
       homebrew:
         name: octave
-        state: present
+        state: absent
