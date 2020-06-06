@@ -66,6 +66,11 @@
         value: false
         state: present
 
+    - name: Install .NET SDK
+      homebrew_cask:
+        name: dotnet-sdk
+        state: present
+
     - name: Install Google Chrome
       homebrew_cask:
         name: google-chrome
