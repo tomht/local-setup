@@ -71,6 +71,11 @@
         name: dotnet-sdk
         state: present
     
+    - name: Install Google Cloud SDK
+      homebrew_cask:
+        name: google-cloud-sdk
+        state: present
+    
     - name: Install Docker Desktop
       homebrew_cask:
         name: docker
